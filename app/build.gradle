@@ -17,15 +17,15 @@ repositories {
 }
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     dataBinding.enabled = true
 
     defaultConfig {
         applicationId "com.pluscubed.matlog"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionName '1.1.2'
         versionCode 7
 
@@ -62,7 +62,7 @@ android {
         debug {
             applicationIdSuffix '.debug'
             versionNameSuffix '-DEBUG'
-            manifestPlaceholders = [appName: "MatLog DEBUG"]
+            manifestPlaceholders = [appName: "MatLog"]
             ext.enableCrashlytics = false
         }
     }
